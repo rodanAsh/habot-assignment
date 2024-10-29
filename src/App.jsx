@@ -1,10 +1,10 @@
-import Customer from './components/Customer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Signup from './components/Signup'
-import Banner from './components/Banner'
-import Services from './components/Services'
-import Footer from './components/Footer'
+import Customer from './sections/Customer'
+import Header from './sections/Header'
+import Hero from './sections/Hero'
+import Signup from './sections/Signup'
+import Banner from './sections/Banner'
+import Services from './sections/Services'
+import Footer from './sections/Footer'
 
 function App() {
 

@@ -14,7 +14,79 @@ body{
 }
 
 @layer utilities {
-  .hero-gradient{
-    @apply bg-gradient-to-b from-[#072f57] via-[#072f5773] to-[#072f57bf];
+  .c-space {
+    @apply my-10 md:my-20 mx-10 md:mx-20;
+  }
+
+  .sub-text {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+
+  .underlined {
+    @apply text-[#E7760D] flex flex-col items-center gap-2;
+  }
+
+  /*Header styles*/
+  .header-btn {
+    @apply font-inter font-semibold px-6 py-2 rounded-md;
+  }
+
+  /*Hero styles*/
+  .hero-gradient {
+    @apply bg-gradient-to-b from-[#072f57] via-[#072f5773] to-[#072f57bf] z-10 mix-blend-hard-light;
+  }
+
+  .hero-input-container {
+    @apply bg-white px-2 py-4  flex items-center border border-[#D1D5DB] gap-2 rounded-md;
+  }
+
+  .hero-input {
+    @apply w-[240px] text-xs text-[#6B7280] lg:placeholder:text-sm placeholder:text-[#6B7280]  outline-none;
+  }
+
+  .hero-btn {
+    @apply bg-green-700 font-bold px-4 py-2 lg:text-base text-sm md:px-8 md:py-3 rounded-md;
+  }
+
+  /*Signup styles*/
+  .signup-btn{
+    @apply bg-green-700 pl-12 pr-5 py-2 flex items-center gap-5 rounded-md;
+  }
+  .grid-container{
+    @apply text-[#3E3E3E] text-sm md:text-base font-inter font-semibold ;
+  }
+
+  .grid-element {
+    @apply border border-[#E7760D] px-5 py-4 rounded-md text-center hover:bg-[#E7760D] hover:text-white transition-colors ease-in;
+  }
+
+  /*Banner styles*/
+  .banner-container{
+    @apply bg-[#E8FBFF] my-20 px-10 py-16 font-poppins;
+  }
+
+  .banner-heading {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
+
+  .banner-btn {
+    @apply bg-[#E7760D] text-white text-sm px-8 py-2 rounded-md;
+  }
+
+  /*Footer styles*/
+  .footer-border {
+    @apply text-white py-10 border-y-[1px] border-[#ffffff33] border-opacity-20;
+  }
+
+  .footer-heading {
+    @apply text-base hover:text-[#E7760D] cursor-pointer font-arial;
+  }
+
+  .footer-subtext {
+    @apply text-xs hover:underline cursor-pointer font-extralight font-inter;
+  }
+
+  .footer-socials {
+    @apply border border-white rounded-full p-2 hover:text-[#E7760D] hover:border-[#E7760D] cursor-pointer;
   }
 }

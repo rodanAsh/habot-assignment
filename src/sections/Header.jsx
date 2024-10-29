@@ -5,6 +5,9 @@ import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 
 const Header = () => {
+  {
+    /* state variable for responsive header */
+  }
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <section className="py-5 px-4 md:px-8">
@@ -23,7 +26,7 @@ const Header = () => {
               <p>Find Service Tags</p> {/* poppins */}
               <img className="w-4" src={down} alt="down-arrow" />
             </span>
-            <button className="border border-[#00732F] text-[#00732F] font-inter font-semibold px-6 py-2 rounded-md hover:border-none hover:text-white hover:bg-[#00732F] transition-all">
+            <button className="header-btn border border-[#00732F] text-[#00732F] hover:border-none hover:text-white hover:bg-[#00732F] transition-all">
               Login / Sign Up {/* inter */}
             </button>
           </div>
@@ -49,7 +52,7 @@ const Header = () => {
             <p>Find Service Tags</p>
             <img className="w-4" src={down} alt="down-arrow" />
           </span>
-          <button className="border border-[#00732F] text-[#00732F] px-6 py-2 rounded-md hover:border-none hover:text-white hover:bg-[#00732F] transition-all">
+          <button className="header-btn border border-[#00732F] text-[#00732F] hover:border-none hover:text-white hover:bg-[#00732F] transition-all">
             Login / Sign Up
           </button>
         </div>
