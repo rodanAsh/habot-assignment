@@ -33,8 +33,8 @@ const Customer = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="flex-1 flex flex-col gap-1 text-white">
-        <div className="flex justify-evenly gap-20 text-xl font-semibold">
+      <div className="flex-1 flex flex-col gap-1 text-white px-2">
+        <div className="flex justify-center sm:justify-evenly gap-20 text-xl font-semibold">
           <span
             onClick={handleBuyer}
             className={
@@ -58,18 +58,18 @@ const Customer = () => {
             )}
           </span>
         </div>
-        <span className="flex items-start gap-2 mt-5 md:mt-10">
+        <span className="flex items-center sm:items-start gap-2 mt-5 md:mt-10">
           <img className="w-3 mt-[2px] sm:mt-1 md:w-4" src={tick} alt="" />
           <p className="sub-text">Post your requirements.</p>
         </span>{" "}
         {/* poppins */}
-        <span className="flex items-start gap-2">
+        <span className="flex items-center sm:items-start gap-2">
           <img className="w-3 mt-[2px] sm:mt-1  md:w-4" src={tick} alt="" />
           <p className="sub-text">
             Sit back for multiple suppliers to contact you.
           </p>
         </span>
-        <span className="flex items-start gap-2">
+        <span className="flex items-center sm:items-start gap-2">
           <img className="w-3 mt-[2px] sm:mt-1 md:w-4" src={tick} alt="" />
           <p className="sub-text">
             Choose among the suppliers based on the ratings and reviews.
